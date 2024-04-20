@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ProblemUpdatesDataSet" targetNamespace="http://tempuri.org/ProblemUpdatesDataSet.xsd" xmlns:mstns="http://tempuri.org/ProblemUpdatesDataSet.xsd" xmlns="http://tempuri.org/ProblemUpdatesDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ProblemUpdatesDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ProblemUpdatesDataSet" msprop:Generator_UserDSName="ProblemUpdatesDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="problems" msprop:Generator_TableClassName="problemsDataTable" msprop:Generator_TableVarName="tableproblems" msprop:Generator_TablePropName="problems" msprop:Generator_RowDeletingName="problemsRowDeleting" msprop:Generator_RowChangingName="problemsRowChanging" msprop:Generator_RowEvHandlerName="problemsRowChangeEventHandler" msprop:Generator_RowDeletedName="problemsRowDeleted" msprop:Generator_UserTableName="problems" msprop:Generator_RowChangedName="problemsRowChanged" msprop:Generator_RowEvArgName="problemsRowChangeEvent" msprop:Generator_RowClassName="problemsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TransactionID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnTransactionID" msprop:Generator_ColumnPropNameInRow="TransactionID" msprop:Generator_ColumnPropNameInTable="TransactionIDColumn" msprop:Generator_UserColumnName="TransactionID" type="xs:int" />
+              <xs:element name="BJCNumber" msprop:Generator_ColumnVarNameInTable="columnBJCNumber" msprop:Generator_ColumnPropNameInRow="BJCNumber" msprop:Generator_ColumnPropNameInTable="BJCNumberColumn" msprop:Generator_UserColumnName="BJCNumber" type="xs:int" />
+              <xs:element name="TransactionDate" msprop:Generator_ColumnVarNameInTable="columnTransactionDate" msprop:Generator_ColumnPropNameInRow="TransactionDate" msprop:Generator_ColumnPropNameInTable="TransactionDateColumn" msprop:Generator_UserColumnName="TransactionDate" type="xs:dateTime" />
+              <xs:element name="ProblemUpdate" msprop:Generator_ColumnVarNameInTable="columnProblemUpdate" msprop:Generator_ColumnPropNameInRow="ProblemUpdate" msprop:Generator_ColumnPropNameInTable="ProblemUpdateColumn" msprop:Generator_UserColumnName="ProblemUpdate" type="xs:string" />
+              <xs:element name="ImportProblem" msprop:Generator_ColumnVarNameInTable="columnImportProblem" msprop:Generator_ColumnPropNameInRow="ImportProblem" msprop:Generator_ColumnPropNameInTable="ImportProblemColumn" msprop:Generator_UserColumnName="ImportProblem" type="xs:boolean" minOccurs="0" />
+              <xs:element name="VehicleID" msprop:Generator_ColumnVarNameInTable="columnVehicleID" msprop:Generator_ColumnPropNameInRow="VehicleID" msprop:Generator_ColumnPropNameInTable="VehicleIDColumn" msprop:Generator_UserColumnName="VehicleID" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:problems" />
+      <xs:field xpath="mstns:TransactionID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
